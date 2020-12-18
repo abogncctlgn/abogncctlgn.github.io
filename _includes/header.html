@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       {% if page.title %}
@@ -49,19 +51,20 @@
       </div>
       <ul id="slide-out" class="side-nav fixed">
         <li>
+          <!--  左上角控件相关-->
           <div class="userView">
-            <div class="background"></div>
-            <a href="{{site.github_profile}}" target="_blank"><img class="circle z-depth-2" src="{{site.baseurl}}/assets/res/user.png"></a>
-            <span class="white-text name">{{site.user}}</span>
-            <span class="white-text email">{{site.user_email}}</span>
-          </div>
+           <div class="background"></div>
+           <a href="{{site.github_profile}}" target="_blank"><img class="circle z-depth-2" src="{{site.baseurl}}/assets/res/user.png"></a>
+           <span class="white-text name">{{site.user}}</span>
+           <span class="white-text email">{{site.user_email}}</span>
+         </div>
         </li>
         <li><a class="waves-effect" href="/"><i class="material-icons">home</i>Home - 主页</a></li>
         <li><a class="waves-effect" href="/projects"><i class="material-icons">description</i>Github - 项目</a></li>
         <li><a class="waves-effect" href="/categories"><i class="material-icons">sort</i>Categories - 目录</a></li>
         <li><a class="waves-effect" href="/tags"><i class="material-icons">label</i>Tags - 标签</a></li>
         <li><a class="waves-effect" href="/feed.xml" target="_blank"><i class="material-icons">rss_feed</i>RSS - 订阅</a></li>
-        <li><div class="divider"></div></li>
+        <!--li><div class="divider"></div></li-->
         <li><a class="waves-effect" href="/about"><i class="material-icons">person</i>About - 关于我</a></li>
         <li><a class="waves-effect" href="/contact"><i class="material-icons">email</i>Contact - 联系我</a></li>
       </ul>
